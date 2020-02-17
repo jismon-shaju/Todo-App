@@ -13,7 +13,7 @@ export default function ListItems(props) {
                             <p>
                                 <input type="text" value={item.text} />
                                 <span>
-                                    <FontAwesomeIcon className="faicons" icon="trash"/>
+                                    <FontAwesomeIcon className="faicons" icon="trash" onClick={e => props.deleteItem(item.key)}/>
                                 </span>
                             </p>
                         </div>
